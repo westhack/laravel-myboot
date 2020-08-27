@@ -1,0 +1,14 @@
+{
+    "name": "Banner",
+    "alias": "banner",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "App\\Modules\\Banner\\Providers\\BannerServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

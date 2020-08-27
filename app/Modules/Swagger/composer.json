@@ -1,0 +1,28 @@
+{
+    "name": "westhack/swagger",
+    "description": "",
+    "authors": [
+        {
+          "name": "Yao",
+          "email": "yao@xinrennet.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "App\\Modules\\Swagger\\Providers\\SwaggerServiceProvider"
+            ],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\Modules\\Swagger\\": ""
+        }
+    },
+    "require-dev": {
+        "zircote/swagger-php": "^3.0"
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "name": "westhack/captcha",
+    "description": "",
+    "authors": [
+        {
+            "name": "yao",
+            "email": "yao@xinrennet.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "App\\Modules\\Captcha\\Providers\\CaptchaServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\Modules\\Captcha\\": ""
+        }
+    }
+}

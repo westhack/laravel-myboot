@@ -1,0 +1,25 @@
+{
+    "name": "westhack/core",
+    "description": "",
+    "authors": [
+        {
+          "name": "Yao",
+          "email": "yao@xinrennet.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "App\\Modules\\Config\\Providers\\ConfigServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\Modules\\Config\\": ""
+        }
+    }
+}

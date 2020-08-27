@@ -1,0 +1,17 @@
+<?php
+/**
+ * @link http://www.xinrennet.com/
+ *
+ * @copyright Copyright (c) 2020 Xinrennet Software LLC
+ * @author  Yao <yao@xinrennet.com>
+ */
+
+namespace $NAMESPACE$;
+
+use Illuminate\Database\Eloquent\Model;
+use App\Models\BaseModel;
+
+class $CLASS$ extends BaseModel
+{
+   protected $guarded = $GUARDED$;
+}

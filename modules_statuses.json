@@ -1,0 +1,9 @@
+{
+    "Adv": true,
+    "Article": true,
+    "Captcha": true,
+    "Core": true,
+    "Storage": true,
+    "Swagger": true,
+    "User": true
+}

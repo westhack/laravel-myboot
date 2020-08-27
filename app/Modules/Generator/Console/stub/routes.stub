@@ -1,0 +1,7 @@
+
+Route::post('/$LOWER_MODULE_NAME$/$LOWER_NAME$/list', '$CLASS$@index');
+Route::post('/$LOWER_MODULE_NAME$/$LOWER_NAME$/create', '$CLASS$@create');
+Route::post('/$LOWER_MODULE_NAME$/$LOWER_NAME$/update', '$CLASS$@update');
+Route::post('/$LOWER_MODULE_NAME$/$LOWER_NAME$/detail', '$CLASS$@detail');
+Route::post('/$LOWER_MODULE_NAME$/$LOWER_NAME$/delete', '$CLASS$@delete');
+Route::post('/$LOWER_MODULE_NAME$/$LOWER_NAME$/all', '$CLASS$@all');

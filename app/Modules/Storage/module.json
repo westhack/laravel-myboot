@@ -1,0 +1,14 @@
+{
+    "name": "Storage",
+    "alias": "storage",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "App\\Modules\\Storage\\Providers\\StorageServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

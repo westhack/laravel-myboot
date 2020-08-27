@@ -1,0 +1,100 @@
+{
+    "name": "westhack/laravel-vue",
+    "type": "project",
+    "description": "The Laravel And Vue Project.",
+    "keywords": [
+        "framework",
+        "laravel",
+        "vue",
+        "admin"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^7.2.5",
+        "ext-json": "*",
+        "fideloper/proxy": "^4.2",
+        "flc/dysms": "^1.0",
+        "fruitcake/laravel-cors": "^1.0",
+        "guzzlehttp/guzzle": "^6.3",
+        "intervention/imagecache": "^2.4",
+        "jacobcyl/ali-oss-storage": "^2.1",
+        "kalnoy/nestedset": "^5.0",
+        "laravel/framework": "^7.0",
+        "laravel/tinker": "^2.0",
+        "maatwebsite/excel": "^3.1",
+        "mews/captcha": "^3.1",
+        "nwidart/laravel-modules": "^7.1",
+        "overtrue/laravel-wechat": "^5.0",
+        "phpseclib/phpseclib": "^2.0",
+        "qcloudsms/qcloudsms_php": "^0.1.4",
+        "qiniu/php-sdk": "^7.2",
+        "spatie/laravel-activitylog": "^3.14",
+        "spatie/laravel-permission": "^3.11",
+        "spiritix/lada-cache": "^5.0",
+        "tucker-eric/eloquentfilter": "^2.3",
+        "tymon/jwt-auth": "^1.0",
+        "waavi/sanitizer": "^1.0",
+        "westhack/laravel-eloquent-search": "^1.1",
+        "zgldh/qiniu-laravel-storage": "^0.10.3"
+    },
+    "require-dev": {
+        "barryvdh/laravel-ide-helper": "^2.7",
+        "doctrine/coding-standard": "^7.0",
+        "facade/ignition": "^2.0",
+        "fzaninotto/faker": "^1.9.1",
+        "mockery/mockery": "^1.3.1",
+        "nunomaduro/collision": "^4.1",
+        "phpunit/phpunit": "^8.5",
+        "slevomat/coding-standard": "^6.3",
+        "squizlabs/php_codesniffer": "^3.5",
+        "zircote/swagger-php": "^3.0"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": []
+        }
+    },
+    "autoload": {
+        "classmap": [
+            "database/seeds",
+            "database/factories"
+        ],
+        "psr-4": {
+            "App\\": "app/",
+            "Modules\\": "app/Modules/"
+        },
+        "files": [
+            "app/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ]
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://mirrors.aliyun.com/composer/"
+        }
+    }
+}

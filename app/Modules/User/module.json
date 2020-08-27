@@ -1,0 +1,15 @@
+{
+    "name": "User",
+    "alias": "user",
+    "label": "用户",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "App\\Modules\\User\\Providers\\UserServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

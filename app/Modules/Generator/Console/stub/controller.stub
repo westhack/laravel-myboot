@@ -1,0 +1,59 @@
+<?php
+/**
+ * @link http://www.xinrennet.com/
+ *
+ * @copyright Copyright (c) 2020 Xinrennet Software LLC
+ * @author  Yao <yao@xinrennet.com>
+ */
+
+namespace $CLASS_NAMESPACE$;
+
+use Illuminate\Database\Eloquent\Builder;
+use App\Http\Controllers\BaseApiController as Controller;
+
+/**
+* @OA\Post(
+*      path="/api/$LOWER_MODULE_NAME$/$LOWER_NAME$/list", tags={"$CLASS$"}, summary="列表",
+*      @OA\Response(response="200",description="",),
+* )
+* @OA\Post(
+*      path="/api/$LOWER_MODULE_NAME$/$LOWER_NAME$/create", tags={"$CLASS$"}, summary="创建",
+*      @OA\Response(response="200",description="",),
+* )
+* @OA\Post(
+*      path="/api/$LOWER_MODULE_NAME$/$LOWER_NAME$/update", tags={"$CLASS$"}, summary="更新",
+*      @OA\Response(response="200",description="",),
+* )
+* @OA\Post(
+*      path="/api/$LOWER_MODULE_NAME$/$LOWER_NAME$/delete", tags={"$CLASS$"}, summary="删除",
+*      @OA\Response(response="200",description="",),
+* )
+* @OA\Post(
+*      path="/api/$LOWER_MODULE_NAME$/$LOWER_NAME$/detail", tags={"$CLASS$"}, summary="详细",
+*      @OA\Response(response="200",description="",),
+* )
+* @OA\Post(
+*      path="/api/$LOWER_MODULE_NAME$/$LOWER_NAME$/all", tags={"$CLASS$"}, summary="全部",
+*      @OA\Response(response="200",description="",),
+* )
+*/
+class $CLASS$ extends Controller
+{
+    protected $allowApi = true;
+    protected $fields = ['*'];
+    protected $pageSize = 10;
+
+    public function getModel():  Builder
+    {
+        $m = new $MODELNAME$();
+
+        return $m->newQuery();
+    }
+
+    /**
+     * 默认生成的控制器所继承的父类中有index/create/update/delete/all五个基础方法、forceDelete/restore/recyclebin三个回收站方法
+     * 因此在当前控制器中可不用编写增删改查的代码,除非需要自己控制这部分逻辑
+     * 需要将app\Http\Controllers\BaseApiController.php中对应的方法复制到当前控制器,然后进行修改
+     */
+
+}

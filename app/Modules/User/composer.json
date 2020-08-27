@@ -1,0 +1,25 @@
+{
+    "name": "westhack/user",
+    "description": "",
+    "authors": [
+        {
+          "name": "Yao",
+          "email": "yao@xinrennet.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "App\\Modules\\User\\Providers\\UserServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\Modules\\User\\": ""
+        }
+    }
+}
