@@ -83,7 +83,11 @@ class Config extends Model
         $error = json_last_error();
 
         if ($error === 0) {
-            return $_value;
+            return trim($_value, '"');
+        }
+
+        if (is_string($value)) {
+            return trim($value, '"');
         }
 
         return $value;
